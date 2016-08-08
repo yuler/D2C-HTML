@@ -9,7 +9,7 @@ gulp.task('stylus', () => {
   return gulp.src('./src/assets/stylus/base.styl')
     .pipe(stylus({
       compress: true
-    }))
+    }).on('error', console.log))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream())
 })
@@ -26,14 +26,14 @@ gulp.task('views', () => {
 /**
  * 启动 browserSync 静态服务器
  */
-gulp.task('serve', ['stylus', 'views'], function() {
+gulp.task('serve', ['stylus', 'views'], () => {
   browserSync({
     notify: false,
     port: 9000,
     server: './dist'
   })
 
-  gulp.watch('./src/assets/**/*.styl', ['stylus'])
+  gulp.watch('./src/assets/stylus/**/*.styl', ['stylus'])
   gulp.watch('./src/views/**/*.html', ['views'])
 })
 
