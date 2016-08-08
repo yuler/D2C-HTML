@@ -1,0 +1,26 @@
+{
+  "name": "d2c-html",
+  "version": "1.0.0",
+  "description": "html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuler/D2C-HTML.git"
+  },
+  "author": "joyful4yu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuler/D2C-HTML/issues"
+  },
+  "homepage": "https://github.com/yuler/D2C-HTML#readme",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-stylus": "^2.5.0"
+  }
+}
