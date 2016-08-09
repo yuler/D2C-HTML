@@ -1,0 +1,75 @@
+#buyer-my-center
+	.avatar
+		margin-top: 10px;
+		padding: 10px;
+		position: relative;
+		border-top: 1px solid $borderColor;
+		border-bottom: 1px solid $borderColor;
+		background-color: white;
+		img
+			width: 60px;
+			height: 60px;
+			border-radius: 30px;
+		p
+			position: absolute;
+			left: 80px;
+			top: 10px;
+			line-height: 60px;
+		span
+			position: absolute;
+			display: block;
+			right: 20px;
+			top: 10px;
+			line-height: 60px;
+	.order
+		margin-top: 10px;
+		
+		border-top: 1px solid $borderColor;
+		border-bottom: 1px solid $borderColor;
+		background-color: white;
+		nav
+			display flex
+			border-bottom: 1px solid $borderColor;
+			a
+				flex 1
+				text-align: center;
+				line-height: 40px;
+				color $hintTextColor
+				&.active
+					border-bottom: 2px solid $blackColor;
+					color $blackColor
+		>div
+			padding: 0 10px;
+			p.my-order
+				padding 15px 0
+				border-bottom: 1px solid $borderColor;
+				span
+					float: right;
+					margin-right: 15px;
+					color $hintTextColor
+			div.my-order-num
+				display flex
+				p
+					flex 1
+					text-align: center;
+					padding: 20px 0;
+					line-height: 20px
+	.links-group
+		margin-top: 10px;
+		a
+			display: block;
+			padding: 0 10px;
+			background-color: white;
+			line-height: 40px;
+			color $blackColor
+			border-top: 1px solid $borderColor;
+			&.wallet
+				border-bottom: 1px solid $borderColor;
+				margin-bottom: 10px;
+				span
+					float: right;
+			&.apply
+				border-bottom: 1px solid $borderColor;
+				margin-top: 10px;
+
+
