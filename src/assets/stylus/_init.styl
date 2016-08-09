@@ -29,3 +29,14 @@ footer
 		color $hintTextColor
 		&.active
 			color $blackColor
+
+.clearfix::before,
+.clearfix::after
+{
+    content:'';
+    height:0;
+    line-height:0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
