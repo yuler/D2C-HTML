@@ -42,4 +42,6 @@ gulp.task('serve', ['stylus', 'views','img'], () => {
   gulp.watch('./src/views/**/*.html', ['views'])
 })
 
+gulp.task('build', ['stylus', 'views','img'])
+
 gulp.task('default', ['serve'])
