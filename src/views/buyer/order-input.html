@@ -7,7 +7,7 @@
 
 </head>
 <body>
-	<div class="order-comment-content">
+	<div class="order-input-content">
 		<div class="order-no">
 			<p >落槌成交，等待买家付款！</p>
 			<p >2016-08-09 18:23:13</p>
@@ -46,16 +46,30 @@
 				<a href="order-comment.html"><span>确认付款</span></a>
 			</div>
 		</div>
-		<div class="comment">
-			<textarea name="comment"  cols="30" rows="10" placeholder="在这里输入您的评价内容…"></textarea>
-			<div class="buttons">
-				<button class='best'>好评</button>
-				<button class='good'>中评</button>
-				<button class='bad'>差评</button>
+		<!--收货地址-->
+		<div class="recive-info">
+			<div class="title">收货地址</div>
+			<!--配送方式-->
+			<div class="send-type clearfix">
+				<div class="send-company">
+					<input checked="checked"  type="radio" name="send-type" id="send-company">
+					<label class="active" for="send-company">快递配送</label>
+				</div>
+				<div class="line"></div>
+				<div class="send-custom">
+					<input type="radio" name="send-type" id="send-custom">
+					<label for="send-custom">上门自提</label>
+				</div>
+				
 			</div>
+			<!--添加新地址-->
+			<a href="address-append.html" class="address-append">
+				<p>添加新地址</p>
+				<s></s>
+			</a>
+			
 		</div>
 
-		<button class="submit-button">确认提交</button>
 	</div>
 </body>
 </html>
