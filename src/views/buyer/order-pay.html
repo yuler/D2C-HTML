@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>待付款</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../base.css">
+
+</head>
+<body>
+<div class="order-pay">
+	<!--订单总额-->
+	<div class="order-total">
+		<p class="title">订单金额</p>
+		<p class="digit">￥11,009<span>.00</span></p>
+	</div>
+
+	<!--支付方式-->
+	<ul class="pay-type clearfix">
+		<li >
+			<img src="../i/pay-ali.jpg" alt="">
+			<div class="pay-content">
+				<p class="pay-title">
+					支付宝支付
+				</p>
+				<p class="pay-summary">推荐有支付宝账号的用户使用</p>
+			</div>
+			<s></s>
+		</li>
+		<li >
+			<img src="../i/pay-wx.jpg" alt="">
+			<div class="pay-content">
+				<p class="pay-title">
+					微信支付
+				</p>
+				<p class="pay-summary">推荐安装微信5.0及以上版本的用户使用</p>
+			</div>
+			<s class="not-fill"></s>
+		</li>
+		<li>
+			<img src="../i/pay-uni.jpg" alt="">
+			<div class="pay-content">
+				<p class="pay-title">
+					银联支付
+				</p>
+				<p class="pay-summary">支付服务由银联提供服务，无需开通网银</p>
+			</div>
+			<s class="not-fill"></s>
+		</li>
+		<li class="pay-daka">
+			<img src="../i/pay-daka.png" alt="">
+			<div class="pay-content">
+				<p class="pay-title">
+					大咖宝支付
+				</p>
+				<p class="pay-summary">使用大咖钱包余额支付</p>
+			</div>
+			<div class="pay-extend">
+				<p class="balance-text">可用余额</p>
+				<p class="balance-value">￥26,500.00</p>
+			</div>
+			<s class="not-fill"></s>
+		</li>
+	</ul>
+
+	<div class="pay-offline">
+		<img src="../i/pay-uni.jpg" alt="">
+		<div>
+			<p class="pay-title">
+				线下大额支付
+			</p>
+			<p class="pay-summary">推荐在订单金额超过线上支付限额时使用</p>
+		</div>
+		<s></s>
+	</div>
+	<a href="#" class="submit-pay">
+		确认支付
+	</a>
+</div>
+</body>
+</html>
