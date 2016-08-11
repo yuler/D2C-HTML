@@ -19,7 +19,29 @@ header
 	font-size: $lgFz;
 	border-bottom: 1px solid $borderColor;
 	background-color white
-
+	>span
+		width 20px
+		height 20px
+		&.right
+			float: right
+			margin-right 10px
+			margin-top 5px
+			position: relative
+			&.notice
+				img
+					width 100%
+				span
+					position: absolute
+					top 5px
+					font-size 8px
+					background red
+					height 12px
+					width: 12px
+					line-height: 12px
+					font-size: 8px
+					border-radius: 6px
+					color white
+					font-weight: bold
 footer
 	display flex
 	position: fixed;
