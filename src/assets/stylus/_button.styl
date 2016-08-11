@@ -1,8 +1,25 @@
 @import './_varaibles'
 
-btn
+.btn
 	font-size $defaultFz
+	text-align center
+		
+	&.btn-default
+		font-size: $defaultFz
+		padding 10px
+		color: $blackColor
+		background-color: white
+		border 1px solid $borderColor
+		border-radius: 3px
+	&.btn-disablde
+		background-color: $disabldeColor
+		color $lightTextColor
+
 	&.btn-lg
 		font-size $mdFz
 	&.btn-sm
 		font-size $smFz
+	&.btn-block
+		display: block;
+	
+		
