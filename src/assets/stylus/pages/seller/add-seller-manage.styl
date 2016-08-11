@@ -1,0 +1,58 @@
+.add-seller-manage
+	nav
+		display flex
+		padding 0 10px
+		background-color #fff
+		border-bottom 1px solid $borderColor
+		a
+			flex 1
+			line-height 40px
+			text-align center
+			color $hintTextColor
+			font-size $defaultFz
+			&.active
+				border-bottom 3px solid $blackColor
+				color $blackColor
+				
+	div.items
+		margin 10px
+		div.item
+			padding 1px
+			display flex
+			margin-bottom 10px
+			a.image-wrapper
+				position relative
+				img
+					width 100px
+					height 100px
+					display block
+				span
+					position absolute
+					left 0
+					bottom 0
+					height 20px
+					width 100%
+					text-align center
+					color white
+					background-color: #999
+					&.processing
+						background-color #ff8ec6
+			div
+				height 100px
+				background white
+				flex 1
+				padding-left 10px
+				p
+					color $textColor
+					&.price span
+						color $blackColor
+						font-size: $mdFz
+					&.time
+						margin-top 15px
+				
+				
+			
+
+	div.add-btn
+		margin-top 20px
+		padding 0 10px

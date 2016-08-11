@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./../base.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		订单管理
+	</header>
+	
+	<div class="buyer-order-manage">
+		<nav>
+			<a href="./order-manage.html">全部</a>
+			<a href="./order-manage-wait-pay.html">待付款</a>
+			<a class="active" href="./order-manage-wait-send.html">待发货</a>
+			<a href="./order-manage-wait-receive.html">待收货</a>
+			<a href="./order-manage-wait-evaluate.html">待评价</a>
+		</nav>
+		<div class="items">
+			<a class="goethe">
+				<div class="title">
+					<span class="title-left"><a href="#">经纪人</a></span>
+					<span class="title-right text-color">等待买家付款</span>
+				</div>
+				
+				<div class="goethe-content clearfix">
+					<div class="pic">
+						<img src="../i/default-img.png" alt="">
+					</div>
+					<div class="desc">
+						<p>Lot.022 富山春居图</p>
+						<p>落槌价: ￥10000</p>
+						<p>买家佣金: 10000x10%=￥1000</p>
+						<p class="sum">实付金额: 10000+1000=<span>￥11000</span></p>
+					</div>
+				</div>
+				<div class="buy">
+					<p>
+						付款截止: 1天 23:59:00
+					</p>
+					<a href="order-pay.html"><span>发货</span></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>

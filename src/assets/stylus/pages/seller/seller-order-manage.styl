@@ -1,8 +1,11 @@
 .buyer-order-manage
 	nav
+		margin-top 5px
 		display flex
 		padding 0 10px
 		background-color #fff
+		border-top 1px solid $borderColor
+		border-bottom 1px solid $borderColor
 		a
 			flex 1
 			line-height 40px
@@ -20,4 +23,6 @@
 			margin-bottom 10px
 			.buy a
 				line-height 30px
+				&.disabled
+					background $disabledColor
 				

@@ -1,0 +1,63 @@
+.add-seller-order
+	nav
+		display flex
+		border-bottom 1px solid $borderColor
+		a
+			line-height 50px
+			flex 1
+			text-align: center
+			font-size: $mdFz
+			&.active
+				border-bottom 2px solid $blackColor
+				font-weight: bold
+	>p
+		margin-top 30px
+		margin-bottom 10px
+		font-size: $mdFz
+		
+	div.content
+		display flex
+		div.menu
+			width 100px
+			border-right 1px solid $borderColor
+			border-top 1px solid $borderColor
+			a
+				display block
+				background-color: #FFF
+				line-height 50px
+				border-bottom 1px solid $borderColor
+				text-align center
+		div.items
+			flex 1
+			padding 0 15px
+			a.item
+				display block
+				padding 10px
+				background-color: #FFF
+				border 1px solid $borderColor
+				border-radius 3px
+				margin-bottom 10px
+		
+		div.themes
+			padding 0 20px
+			flex 1
+			.theme
+				padding 10px
+				background: white
+				border-radius: 5px
+				position relative
+				h4
+					margin 5px 0
+				p
+					margin 5px 0
+				&:before
+					content ''
+					display block
+					background white
+					width 20px
+					height 20px
+					transform rotate(45deg)
+					position absolute
+					top 20px
+					left -10px
+				

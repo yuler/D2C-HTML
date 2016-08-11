@@ -1,10 +1,12 @@
 @import './_varaibles.styl'
 
+html
+	font-family: 'ArialMT', 'Arial'
 html,body,ul,li,p,textarea
 	margin 0
 	padding 0
 	border 0
-
+	
 body
 	background-color: $backgroundColor;
 	font-size $defaultFz
@@ -37,6 +39,8 @@ header
 				text-align center
 				border-radius 3px
 				margin-left -87px
+			&.add-seller
+				width 50px
 				a
 					display block
 					line-height 30px
@@ -96,7 +100,9 @@ footer
 }
 .text-color
 	color $textColor!important
-	
+.red
+	color red!important
+
 .mt15
 	margin-top 15px!important
 	
