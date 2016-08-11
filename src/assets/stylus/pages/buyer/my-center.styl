@@ -51,7 +51,7 @@
 			padding: 0 10px;
 			p.my-order
 				padding 15px 0
-				border-bottom: 1px solid $borderColor;
+				border-bottom: 1px dotted $borderColor;
 				span
 					float: right;
 					margin-right: 0px;
@@ -75,9 +75,25 @@
 			line-height: 40px;
 			color $blackColor
 			border-top: 1px solid $borderColor;
+			position relative
 			span
 					float: right;
 					color $hintTextColor
+					font-size $smFz
+			i
+				font-size $defaultFz
+			&.notice
+				&.new:after
+					content ''
+					display block
+					width 8px
+					height 8px
+					border-radius 10px
+					background red
+					position absolute
+					top 15px
+					left 95px
+					
 			&.wallet
 				border-bottom: 1px solid $borderColor;
 				margin-bottom: 10px;

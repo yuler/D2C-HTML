@@ -35,7 +35,8 @@ gulp.task('serve', ['stylus', 'views','img'], () => {
   browserSync({
     notify: false,
     port: 9000,
-    server: './dist'
+    server: './dist',
+    open: false
   })
 
   gulp.watch('./src/assets/stylus/**/*.styl', ['stylus'])
