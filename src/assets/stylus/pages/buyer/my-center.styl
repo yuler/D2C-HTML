@@ -7,16 +7,31 @@
 		border-top: 1px solid $borderColor;
 		border-bottom: 1px solid $borderColor;
 		background-color: white;
-		img
-			width: 60px;
-			height: 60px;
-			border-radius: 30px;
+		position relative
+		.avatar-wrapper
+			img
+				width: 60px;
+				height: 60px;
+				border-radius: 30px;
+			span.avatar-auth
+				position absolute
+				width: 22px
+				height 22px
+				text-align: center
+				color white
+				font-size: $smFz
+				font-weight: bold
+				line-height 22px
+				left 55px
+				top 48px
+				background-image: url('./../i/icon-avatar-auth.png')
+				background-position: 100% 100%
 		p
 			position: absolute;
 			left: 80px;
 			top: 10px;
 			line-height: 60px;
-		span
+		>span
 			position: absolute;
 			display: block;
 			right: 30px;
@@ -24,7 +39,7 @@
 			line-height: 60px;
 			font-size $smFz;
 			color $hintTextColor
-		i
+		>i
 			position: absolute;
 			right 10px
 			top 24px
@@ -80,8 +95,6 @@
 					float: right;
 					color $hintTextColor
 					font-size $smFz
-			i
-				font-size $defaultFz
 			&.notice
 				&.new:after
 					content ''
