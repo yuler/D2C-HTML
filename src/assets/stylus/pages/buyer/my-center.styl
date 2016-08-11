@@ -1,4 +1,6 @@
-#buyer-my-center
+#buyer-my-center,
+#seller-buy-center,
+#seller-buy-center-unapply
 	padding-bottom 60px
 	.avatar
 		margin-top: 10px;
@@ -40,11 +42,10 @@
 			font-size $smFz;
 			color $hintTextColor
 		>i
-			position: absolute;
-			right 10px
-			top 24px
-			color $hintTextColor
-			font-size: $lgsFz
+			position: absolute
+			right 0
+			top 25px
+
 	.order
 		margin-top: 10px;
 		
@@ -67,12 +68,16 @@
 			p.my-order
 				padding 15px 0
 				border-bottom: 1px dotted $borderColor;
+				position relative
 				span
 					float: right;
-					margin-right: 0px;
+					margin-right: 10px;
 					color $hintTextColor
 					i
 						color $hintTextColor
+						position absolute
+						right -10px
+						top 10px
 						
 			div.my-order-num
 				display flex
@@ -92,9 +97,15 @@
 			border-top: 1px solid $borderColor;
 			position relative
 			span
-					float: right;
-					color $hintTextColor
-					font-size $smFz
+				float: right;
+				color $hintTextColor
+				font-size $smFz
+				margin-right 10px
+			i
+				position: absolute
+				right 0
+				top 4px		
+
 			&.notice
 				&.new:after
 					content ''
@@ -114,5 +125,15 @@
 			&.apply
 				border-bottom: 1px solid $borderColor;
 				margin-top: 10px;
-
-
+	.unapply
+		padding 0 20px
+		margin-top 10%
+		p
+			margin-top 10px
+			text-align center
+			color $hintTextColor
+			&.hint
+				font-size: $smFz
+		a
+			margin-top 20px
+				
