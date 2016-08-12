@@ -1,7 +1,7 @@
 var browserSync = require('browser-sync'),
   gulp = require('gulp'),
-  stylus = require('gulp-stylus');
-
+  stylus = require('gulp-stylus'),
+  autoprefixer = require('gulp-autoprefixer');
 /**
  * 编译 stylus
  */
@@ -10,6 +10,10 @@ gulp.task('stylus', () => {
     .pipe(stylus({
       compress: true
     }).on('error', console.log))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream())
 })
