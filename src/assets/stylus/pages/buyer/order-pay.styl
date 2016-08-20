@@ -1,4 +1,5 @@
 .order-pay
+	z-index 1
 	.order-total
 		width 100%
 		margin-top 10px
@@ -115,5 +116,114 @@
 		border-radius 4px
 		line-height 46px
 		font-size 18px
+.opacity-black-background
+	position fixed
+	left 0
+	top 0
+	background black
+	opacity 0.5
+	height 100%
+	width 100%
+.confirm-cancel
+	width 80%
+	height 180px
+	position fixed
+	left 10%
+	top 10%
+	background white
+	border 1px solid $borderColor
+	border-radius 5px
+	.title
+		font-size 18px
+		margin-top 20px
+		text-align center
+	.content
+		text-align left
+		position absolute
+		left 15px
+		right 15px
+		top 55px	
+		font-size 14px
+		line-height: 16px
+	.buttons
+		position: absolute
+		left 15px
+		right 15px
+		bottom: 20px
+		font-size: 18px
+		line-height: 40px
+		.button-left
+			width: 48%
+			float left
+			background: white
+			border 1px solid black
+			height: 40px
+			text-align: center
+			border-radius: 4px
+		.button-right
+			width: 48%
+			float right
+			background black
+			color white
+			text-align: center
+			border-radius: 4px
+			
+.confirm-offline-pay
+	width 80%
+	height 390px
+	position fixed
+	left 10%
+	top 10%
+	background white
+	border 1px solid $borderColor
+	border-radius 5px
+	.title
+		margin-top 15px
+		font-size 18px
+		text-align: center
+		position: relative
+		color: black
+		a
+			position: absolute
+			top 0px
+			right 10px
+	.total
+		font-size 28px
+		text-align: center
+		margin-top 15px
+	.content
+		color: #999999
+		font-size 14px
+		padding: 0 15px
+		margin-top 15px
+		p
+			margin-top 10px
+			line-height: 20px
+		.bank
+			margin-top: 10px
+			p
+				margin 0
+				span
+					&.value
+						color black
+						margin-right 5px
+	.buttons
+		position: absolute
+		left 15px
+		right 15px
+		bottom: 20px
+		font-size: 18px
+		line-height: 40px
+		text-align: center
+		background black
+		border-radius: 4px
+		a
+			display: block
+			width 100%
+			color white
+			text-align: center
+			
+		
 
-
+			
+		

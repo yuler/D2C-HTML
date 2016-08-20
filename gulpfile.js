@@ -32,10 +32,16 @@ gulp.task('img', () => {
     .pipe(gulp.dest('./dist/i'))
     .pipe(browserSync.stream())
 })
+gulp.task('js', () => {
+  return gulp.src('./src/assets/js/**')
+    
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(browserSync.stream())
+})
 /**
  * 启动 browserSync 静态服务器
  */
-gulp.task('serve', ['stylus', 'views','img'], () => {
+gulp.task('serve', ['stylus', 'views','img','js'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -45,8 +51,9 @@ gulp.task('serve', ['stylus', 'views','img'], () => {
 
   gulp.watch('./src/assets/stylus/**/*.styl', ['stylus'])
   gulp.watch('./src/views/**/*.html', ['views'])
+  gulp.watch('./src/assets/js/**', ['js'])
 })
 
-gulp.task('build', ['stylus', 'views','img'])
+gulp.task('build', ['stylus', 'views','img','js'])
 
 gulp.task('default', ['serve'])
